@@ -1,0 +1,27 @@
+
+
+    public void moveV() {
+        accelerate();
+        paddle.y += yVelocity;
+
+    }
+
+    public void accelerate(){
+        if(yDirection = 1 && yVelocity < 3) {
+            paddle.yVelocity++;
+        }
+        if(yDirection = -1 && paddle.yVelocity > -3){
+            paddle.yVelocity--;
+        }
+        // If no input, slow the paddle down
+        if(yDirection = 0 && paddle.yVelocity > 0){
+            paddle.yVelocity--;
+        }
+        if(yDirection = 0 && paddle.yVelocity < 0){
+            paddle.yVelocity++;
+        }
+        if (paddle.y <= 15)
+            paddle.y = 15;
+        if (paddle.y >= 340)
+            paddle.y = 340;
+    }

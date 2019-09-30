@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Pong",
+            "request": "launch",
+            "mainClass": "Pong",
+            "projectName": "Pong_9cd5934d"
+        }
+    ]
+}
