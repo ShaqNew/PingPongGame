@@ -36,8 +36,8 @@ public class Pong extends JFrame {
         ball.p2.draw(g);
 
         g.setColor(Color.WHITE);
-        g.drawString("" + ball.p1Score, 15, 20);
-        g.drawString("" + ball.p2Score, 385, 20);
+        g.drawString("P1: " + ball.p1Score, 15, 20);
+        g.drawString("P2: " + ball.p2Score, 385, 20);
 
         repaint();
     }
@@ -57,7 +57,7 @@ public class Pong extends JFrame {
     }
 
     public static void main(String[] args) {
-        Pong pong = new Pong();
+        Pong p = new Pong();
 
         Thread ballThread = new Thread(ball);
         ballThread.start();

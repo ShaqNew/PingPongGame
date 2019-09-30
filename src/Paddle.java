@@ -72,8 +72,8 @@ public class Paddle implements Runnable {
     public void move() {
         // +1 == up, 0 == still, -1 == down
         paddle.y += yDirection;
-        if (paddle.y <= 15)
-            paddle.y = 15;
+        if (paddle.y <= 30)
+            paddle.y = 30;
         if (paddle.y >= 350)
             paddle.y = 350;
     }

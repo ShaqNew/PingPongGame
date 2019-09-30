@@ -69,7 +69,7 @@ public class Ball implements Runnable {
             System.out.println("Player 1 scored");
             System.out.println("Current score: " + p1Score + " - " + p2Score);
         }
-        if (ball.y <= 15)
+        if (ball.y <= 30)
             setYDirection(+1);
         if (ball.y >= 385)
             setYDirection(-1);
@@ -80,7 +80,7 @@ public class Ball implements Runnable {
         try {
             while (true) {
                 move();
-                Thread.sleep(8);
+                Thread.sleep(7);
             }
         } catch (Exception e) {
             System.err.println(e.getMessage());
